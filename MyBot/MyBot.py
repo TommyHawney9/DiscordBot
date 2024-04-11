@@ -5,7 +5,7 @@ from discord.ext import commands, tasks
 
 
 myBot = commands.Bot(command_prefix='-')
-status = cycle(['-help for commands', 'myBot by Cult Tech', 'Visit our webpage', 'https://sites.google.com/view/money-moves/home?authuser=0', ])
+status = cycle(['-help for commands', helperBot, ])
 
 
 @myBot.event
@@ -56,4 +56,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         myBot.load_extension(f'cogs.{filename[:-3]}')
 
-myBot.run('NzE2NzczODg3Mzk2MDIwMjg0.XtQpsw.4eg0Agw5-7LJUpHPQ9TfVmwVHtQ')
+myBot.run('ENTER_BOT_TOKEN_HERE')
